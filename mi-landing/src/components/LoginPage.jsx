@@ -1,11 +1,11 @@
-import Header from '../components/Header';
-import Login from '../components/Login';
+import React from 'react';
 
-const LoginPage = () => (
-  <div>
-    <Header />
-    <Login />
-  </div>
-);
+const LoginPage = () => {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold">Login Page</h1>
+    </div>
+  );
+};
 
 export default LoginPage;

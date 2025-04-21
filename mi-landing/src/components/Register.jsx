@@ -1,37 +1,31 @@
 import React from 'react';
-
-const Register = () => (
-  <div className="flex items-center justify-center min-h-screen bg-gray-100">
-    <form className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-      <h2 className="text-2xl font-bold mb-6 text-center">Registro</h2>
-      <input
-        className="w-full mb-4 p-2 border border-gray-300 rounded"
-        type="text"
-        placeholder="Username"
-      />
-      <input
-        className="w-full mb-4 p-2 border border-gray-300 rounded"
-        type="email"
-        placeholder="Email"
-      />
-      <input
-        className="w-full mb-4 p-2 border border-gray-300 rounded"
-        type="password"
-        placeholder="Password"
-      />
-      <input
-        className="w-full mb-6 p-2 border border-gray-300 rounded"
-        type="password"
-        placeholder="Confirm Password"
-      />
-      <button
-        className="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-        type="submit"
-      >
-        Register
-      </button>
-    </form>
-  </div>
-);
+<h2 className="text-red-500 text-2xl">Esto es rojo si Tailwind funciona</h2>
+const Register = () => {
+  return (
+    <div className="max-w-md mx-auto mt-10">
+      <h2 className="text-2xl font-bold mb-4">Register</h2>
+      <form>
+        <input
+          className="w-full mb-2 p-2 border"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          className="w-full mb-2 p-2 border"
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          className="w-full mb-2 p-2 border"
+          type="password"
+          placeholder="Password"
+        />
+        <button className="w-full bg-blue-500 text-white p-2 mt-2 rounded">
+          Register
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default Register;

@@ -1,13 +1,11 @@
-import React from "react";
-import "../index.css"; // solo si realmente necesitas estilos aquí
+import React from 'react';
 
-function RegisterPage() {
+const RegisterPage = () => {
   return (
-    <div>
-      <h1>Registro</h1>
+    <div className="p-8">
+      <h1 className="text-3xl font-bold">Register Page</h1>
     </div>
   );
-}
+};
 
 export default RegisterPage;
-
