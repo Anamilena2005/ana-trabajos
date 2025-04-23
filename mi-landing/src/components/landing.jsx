@@ -1,10 +1,18 @@
-import React from 'react';
+import React from "react";
+import "./Landing.css";
 
 const Landing = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Landing Page</h1>
-    </div>
+    <section className="landing-section">
+      <div className="landing-content">
+        <h1>Bienvenido a mi página</h1>
+        <p>Explora nuestras ventajas y regístrate para saber más.</p>
+        <button>Comenzar</button>
+      </div>
+      <div className="landing-image">
+        <img src="/imagenes/landing-img.png" alt="Landing Visual" />
+      </div>
+    </section>
   );
 };
 

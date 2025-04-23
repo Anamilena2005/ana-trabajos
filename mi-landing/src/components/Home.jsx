@@ -1,13 +1,14 @@
-import Header from '../components/Header';
-import Landing from '../components/Landing';
-import Advantages from '../components/Advantages';
+import React from "react";
+import Landing from "./Landing";
+import Advantages from "../components/Advantages";
 
-const Home = () => (
-  <div>
-    <Header />
-    <Landing />
-    <Advantages />
-  </div>
-);
+const Home = () => {
+  return (
+    <>
+      <Landing />
+      <Advantages />
+    </>
+  );
+};
 
 export default Home;

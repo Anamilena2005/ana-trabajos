@@ -1,15 +1,22 @@
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../components/Header.css";
 
-const Header = () => (
-  <header className="flex justify-between items-center p-4 bg-white shadow">
-    <div className="font-bold text-xl">COMPANY</div>
-    <nav className="space-x-4">
-      <Link to="/">Home</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
-    </nav>
-    <div className="text-sm">999-456-009</div>
-  </header>
-);
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="header-container">
+        <h1 className="logo">✨ Mi Landing React</h1>
+        <nav className="nav-links">
+          <Link to="/">Inicio</Link>
+          <Link to="/login">Iniciar Sesión</Link>
+          <Link to="/register">Registrarse</Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
 export default Header;
+
+
